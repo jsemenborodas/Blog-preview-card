@@ -5,8 +5,10 @@
     --white: rgb(255, 255, 255);
 }
 
-p{
-    font-size: 16px;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Figtree';
 }
 
 @font-face {
@@ -21,10 +23,132 @@ p{
     font-weight: 800;
 }
 
+p{
+    font-size: 16px;
+}
+
 html, body{
     height: 100%;
 }
 
 body{
     min-height: 812px;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--yellow);
+}
+
+main{
+    max-width: 384px;
+    min-height: 499px;
+    width: 87.156%;
+    height: 100%;
+    max-height: 522px;
+    height: 499px;
+    background: var(--white);
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid var(--gray-950);
+    box-shadow: 8px 8px ;
+}
+
+img{
+    margin-top: 23px;
+    width: calc(100% - 48px);
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.colored__paragraph p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22.3241590214%;
+    height: 26px;
+    color: var(--gray-950);
+    background: var(--yellow);
+    font-family: 'Figtree';
+    font-weight: 800;
+    margin-left: 24px;
+    margin-top: 20px;
+    font-size: calc(12px + 2.5 * (100vw / 1440));
+    border-radius: 4px;
+}
+
+.published{
+    margin-top: 15px;
+}
+
+.published p{
+    display: flex;
+    margin-left: 24px;
+    font-size: calc(12px + 2 * (100vw / 1440));
+}
+
+.heading{
+    margin-top: 16px;
+}
+
+.heading h1{
+    display: flex;
+    margin-left: 24px;
+    font-size: calc(20px + 4 * (100vw / 1440));
+    font-weight: 900;
+}
+
+.backbone{
+    margin-top: 15px;
+}
+
+.backbone p{
+    font-size: calc(14px + 2 * (100vw / 1440));
+    text-align: left;
+    margin-left: 24px;
+    line-height: 1.5;
+    color: var(--gray-500);
+}
+
+figure{
+    display: flex;
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
+figure img{
+    width: 32px;
+    height: 32px;
+    margin: 0;
+}
+
+figcaption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11px;
+}
+
+figcaption p{
+    font-weight: 900;
+    font-size: 14px;
+}
+
+@media (width >= 768px) {
+    main{
+        height: 522px;
+    }
+    .colored__paragraph p{
+        height: 30px;
+    }
+
+    .heading:hover{
+        color: var(--yellow);
+        cursor: pointer;
+    }
 }
