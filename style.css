@@ -1,0 +1,30 @@
+:root{
+    --yellow: rgb(244, 208, 78);
+    --gray-950: rgb(17, 17, 17);
+    --gray-500: rgb(107, 107, 107);
+    --white: rgb(255, 255, 255);
+}
+
+p{
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(./assets/fonts/static/Figtree-SemiBold.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(./assets/fonts/static/Figtree-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    min-height: 812px;
+}
